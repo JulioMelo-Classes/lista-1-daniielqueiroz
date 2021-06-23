@@ -13,7 +13,7 @@ int main(void){
   int m, n;
   int range;
 
-  while(cin>>m>>n){
+  while(std::cin>>m>>n){
     int soma = 0;
     range = m + n;
 
@@ -32,7 +32,7 @@ int main(void){
 
     }
 
-    cout<<soma<<"\n";
+    std::cout<<soma<<std::endl;
   }
 
   return 0;
