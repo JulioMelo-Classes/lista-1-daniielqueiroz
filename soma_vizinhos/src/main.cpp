@@ -8,9 +8,32 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int main( void )
-{
-    // TODO: Adicione seu código aqui. 
+int main(void){
+  // TODO: Adicione seu código aqui. 
+  int m, n;
+  int range;
 
-    return 0;
+  while(cin>>m>>n){
+    int soma = 0;
+    range = m + n;
+
+    if(n > 0){
+      for(int i = m; i < range; i++){
+        soma = soma + i;
+      }
+
+    }else if(n == 0){
+      soma = m;
+
+    }else{
+      for(int i = m; i > range; i--){
+        soma = soma + i;
+      }
+
+    }
+
+    cout<<soma<<"\n";
+  }
+
+  return 0;
 }

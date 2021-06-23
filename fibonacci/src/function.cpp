@@ -1,9 +1,24 @@
 #include "function.h"
 
-std::vector<unsigned int> fib_below_n( unsigned int n )
-{
-    // TODO: adicione o seu código aqui.
+std::vector<unsigned int> fib_below_n( unsigned int n ){
+  std::vector<unsigned int> sequencia_fibonacci = {1,1};
+  int x = 1, y = 1, aux;
+  
+  if(n == 1){
+    sequencia_fibonacci.clear();
+  }else{
+    while(true){
+      aux = x + y;
+      x = y;
+      y = aux;
 
-    // TODO: Isto é apenas um STUB. Troque o retorno pelo que você julgar correto.
-    return std::vector<unsigned int>{};
+      if(aux < n)
+        sequencia_fibonacci.push_back(aux);
+      else
+        break;
+      
+    };
+  }
+  
+  return sequencia_fibonacci;
 }
