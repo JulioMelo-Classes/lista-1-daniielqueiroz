@@ -14,6 +14,9 @@ using std::max;
 
 #include "function.h"
 
+/*
+vou considerar 80% já que vc não validou a entrada
+*/
 int main(void)
 {
   int x1,y1,x2,y2,x3,y3;

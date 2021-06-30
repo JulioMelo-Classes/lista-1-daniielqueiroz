@@ -8,6 +8,9 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+/*
+ok
+*/
 int main(void){
   // TODO: Adicione seu código aqui. 
   int m, n;

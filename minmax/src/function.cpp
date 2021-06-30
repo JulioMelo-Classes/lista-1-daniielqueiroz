@@ -9,7 +9,9 @@
  *
  * @return A pair of indexes to the first smallest and last largest values.
  */
-
+/*
+ok
+*/
 std::pair<int,int> min_max( int V[], std::size_t n ){
     std::pair<int, int> indices;
 
@@ -22,7 +24,7 @@ std::pair<int,int> min_max( int V[], std::size_t n ){
     }else{
       for(int i = 0; i < n; i++){
         if(V[i] >= valor_max){
-          valor_max = V[i];
+          valor_max = V[i]; //não precisava ficar guardando essa variável, mas blz
           indices.second = i;
         }
         if(V[i] < valor_min){

@@ -11,6 +11,9 @@ using std::endl;
 #include <iomanip>
 using std::setprecision;
 
+/*
+ok!
+*/
 int main(void){
   int n;
   int count[5] = {0};

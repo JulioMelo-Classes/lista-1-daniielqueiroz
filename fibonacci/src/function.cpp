@@ -1,5 +1,8 @@
 #include "function.h"
 
+/*
+ok
+*/
 std::vector<unsigned int> fib_below_n( unsigned int n ){
   std::vector<unsigned int> sequencia_fibonacci = {1,1};
   int x = 1, y = 1, aux;
@@ -8,7 +11,7 @@ std::vector<unsigned int> fib_below_n( unsigned int n ){
     sequencia_fibonacci.clear();
   }else{
     while(true){
-      aux = x + y;
+      aux = x + y; //poderia usar o próprio vetor
       x = y;
       y = aux;
 
